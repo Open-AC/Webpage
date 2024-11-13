@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav-item {
+        @apply text-white text-xl font-medium font-jetbrains-mono uppercase cursor-pointer;
+    }
+
+    .translucent-themed-item {
+        @apply rounded-xl bg-black bg-opacity-25 border-slate-600 border-opacity-40 backdrop-blur-md;
+    }
+
+    .translucent-themed-container {
+        @apply translucent-themed-item border p-10 max-[600px]:p-5;
+    }
+
+    .card-item {
+        @apply flex flex-col items-center translucent-themed-container space-y-5;
+    }
+
+    .title-label {
+        @apply text-white font-medium font-playfair-display;
+    }
+
+    .description-label {
+        @apply text-white font-montserrat;
+    }
+
+    .recap-label {
+        @apply description-label text-xl max-[675px]:text-sm font-jetbrains-mono;
+    }
+
+    .section-title-label {
+        @apply title-label w-full text-center text-[120px] max-[1324px]:text-[90px] max-[625px]:text-[50px] max-[450px]:text-[45px];
+    }
+
+    .copyright-label {
+        @apply text-neutral-300 font-montserrat text-center;
+    }
+
+    .dotted-background {
+        background-image: radial-gradient(circle, rgba(134, 122, 69, 0.219) 4px, transparent 0);
+        background-size: 50px 50px;
+        animation: moveDots 85s linear infinite; /* Apply the animation */
+        @apply absolute transform -translate-x-1/2 -translate-y-1/2 blur-sm w-[400vw] h-[400vh] -z-50;
+    }
+
+    /* Keyframes to move the dots to the right */
+    @keyframes moveDots {
+        0% {
+            background-position: 0 25%;
+        }   
+        100% {
+            background-position: 100% 75%;
+        }
+    }
+}
+
+@layer base {
+    body {
+        background-color: rgb(2, 5, 19);
+        animation: fadeIn 1s;
+    }
+
+    /* Keyframes for the fade-in effect */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+section p {
+    @apply description-label text-xl max-[450px]:text-sm text-justify;
+}
+
+.card-item p {
+    @apply description-label text-lg max-[675px]:text-sm min-[450px]:text-justify;
+}
+
+.card-item img {
+    @apply rounded-2xl h-40 w-40 max-[800px]:h-24 max-[800px]:w-24;
+}
+
+.card-owner-info h1 {
+    @apply font-montserrat font-semibold text-white text-[45px] max-[800px]:text-[30px] text-center;
+}
+
+.card-owner-info p {
+    @apply font-montserrat text-neutral-400 text-xl text-center;
+}

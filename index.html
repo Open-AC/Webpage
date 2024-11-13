@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="icon" href="./assets/favicon.ico">
+    <title>OpenAC</title>
+</head>
+<body class="h-screen w-screen p-6 max-[600px]:p-1">
+    <!-- TODO: Stupid hack. I hate this. Needs fix. -->
+    <div class="fixed dotted-background bg-[#020513]"></div>
+    <!-- Top Bar -->
+    <div class="fixed flex items-center translucent-themed-item border-2 h-24 max-[550px]:h-16 max-[550px]:p-4 max-[470px]:border max-w-[calc(100vw - 20px)] px-12 py-6 top-6 left-6 right-6 z-50">
+        <a datatarget="about" class="flex items-center max-[550px]:w-full h-full cursor-pointer">
+            <img src="./assets/images/openac_logo.png" alt="OpenAC Topbar Logo" class="h-full w-full object-contain">
+        </a>
+        <nav id="nav-links" class="flex items-center space-x-4 ml-auto max-[700px]:hidden"></nav>
+    </div>
+    <!-- Content -->
+    <div class="pt-36 px-7 space-y-24">
+        <section id="about" class="space-y-7">
+            <h1 class="title-label w-full text-center text-[160px] max-[1324px]:text-[100px] max-[625px]:text-[60px] max-[450px]:text-[45px]">OpenAC</h1> <!-- Title -->
+            <p>
+                Welcome to OpenAC, where we take Roblox® anti-cheat seriously... but not too seriously. Led by the unstoppable duo, Liker and Unlimited, we're here to save your experiences from exploiters, one cheat at a time.
+                We made the average game developer's treasure, like resources that cover advanced yet easy to prevent cheats, and solutions used in several experiences.
+                Whether you're a seasoned developer or just trying to keep your game free from hackers, we've got your back!
+            </p>
+            <p>
+                Our journey began with the creation of legendary anti-cheat tools like ASTON, Karma, LAT-AT, and Polygon AE — tools that have long since hung up their hats but still live on in the hearts (and code) of developers.
+                All this was before Roblox® partnered with Byfron Technologies in 2022, proving that we've been ahead of the curve in this battle.
+                We mix a little humor with our expertise, because who said keeping cheaters out can't be fun?
+            </p>
+            <h1 class="description-label font-jetbrains-mono text-xl max-[450px]:text-sm text-left">
+                With your help, let's make Roblox® fair — and have a few laughs along the way!
+            </h1>
+        </section>
+        <section id="team">
+            <div class="translucent-themed-container space-y-6">
+                <h1 class="title-label text-[100px] max-[700px]:text-[60px] text-center">The Team</h1>
+                <div class="grid grid-cols-1 min-[1200px]:grid-cols-2 gap-5">
+                    <div class="card-item">
+                        <img src="./assets/pfp/Liker.png" alt="Liker's profile picture">
+                        <div class="card-owner-info">
+                            <h1>Liker</h1>
+                            <p>Founder</p>
+                        </div>
+                        <p>
+                            Hi, I'm Liker, the founder of OpenAC and someone who's all about creating smarter, more resilient yet lightweight anti-cheat systems.
+                            Since diving into cybersecurity at a young age, I've been driven to make online environments safer—especially on Roblox, where I work on innovative anti-exploit techniques and help developers stay one step ahead of exploiters. 
+                        </p>
+                    </div>
+                    <div class="card-item">
+                        <img src="./assets/pfp/Unlimited.png" alt="Unlimited's profile picture">
+                        <div class="card-owner-info">
+                            <h1>Unlimited</h1>
+                            <p>Co-Founder</p>
+                        </div>
+                        <p>
+                            Hi, I am Unlimited. I'm a dedicated Roblox developer with a strong focus on anti-cheat solutions, known for creating and sharing methods to detect and counteract exploits in Roblox games.
+                            Over the years, I've gained recognition in the developer community for my detailed posts and effective anti-cheat techniques, aimed at protecting games from various vulnerabilities and exploit attempts.
+                        </p>
+                    </div>
+                </div>
+                <div class="translucent-themed-container max-[600px]:p-5 space-y-6">
+                    <p class="recap-label">
+                        Together, we're focused on making Roblox a safer, fairer place to play, so developers can focus on creating and players can enjoy the game, worry-free.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="impact" class="space-y-8">
+            <h1 class="section-title-label">Our Impact</h1>
+            <p>
+                We're not just building tools — we're making a real difference in the Roblox community by giving developers the power to detect exploiters and keep their games safe.
+                From industry veterans to new developers, people rely on our anti-cheat solutions daily to stay ahead of game-breaking exploits.
+                Our methods are tested, battle-proven, and — if we're being honest — kind of fun to watch in action.
+                Every 45 seconds, this counter will update to an approximated total amount of exploiters since OpenAC was firstly implemented.
+                Don't take our word for it — check this <a href="https://TO_FILL/" target="_blank" class="text-blue-300">webpage's source code</a> yourself if you're skeptical.
+            </p>
+            <h5 class="recap-label">
+                We're all about transparency, proof, and keeping the games you love secure.
+            </h5>
+            <div class="flex flex-col items-center space-y-4">
+                <h1 id="cheater-counter" class="translucent-themed-item rounded-md border font-jetbrains-mono font-extralight text-white text-6xl text- text-center px-12 mt-4 w-fit">13371337</h1>
+                <p class="text-center font-semibold">Cheaters were detected with OpenAC since it was firstly implemented. (Not working yet, soon™)</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h1 class="section-title-label">Contact Us</h1>
+            <div class="grid grid-cols-1 justify-items-center min-[1200px]:grid-cols-2 gap-5 translucent-themed-container">
+                <p>To contact us, join our community server!</p>
+                <iframe src="https://discord.com/widget?id=1259217837969375372&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" class="w-full max-w-[600px] h-[500px]"></iframe>
+            </div>
+        </section>
+        <div class="flex flex-col items-center w-full">
+            <p class="copyright-label text-sm">© 2024 OpenAC - All rights reserved</p>
+            <p class="copyright-label text-xs">
+                The Roblox® platform, its name, logo, and other related trademarks are the property of Roblox Corporation. 
+            </p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let navLinks = document.getElementById("nav-links");
+            let cheaterCounterElement = document.getElementById("cheater-counter");
+            let cheaterCount = 0;
+
+            const links = [
+                ['About', 'about'],
+                ['Team', 'team'],
+                ['Impact', 'impact'],
+                ['Contact', 'contact']
+            ];
+
+            links.forEach(([title, datatarget]) => {
+                const navItem = document.createElement("p");
+                navItem.className = "nav-item cursor-pointer";
+                navItem.setAttribute("datatarget", datatarget);
+                navItem.innerText = title;
+
+                navItem.addEventListener("click", () => {
+                    const targetSection = document.getElementById(datatarget);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: "smooth"
+                        });
+                    } else {
+                        console.warn(`Section '${datatarget}' not found.`);
+                    }
+                });
+
+                navLinks.appendChild(navItem);
+            });
+
+            function formatWithDots(number) {
+                return number.toLocaleString().toLocaleString(
+                    undefined,
+                    { minimumFractionDigits: 2 }
+                );
+            }
+
+            cheaterCounterElement.textContent = formatWithDots(13371337);
+
+            function updateCheaterCount() {
+                fetch("https://api.open-ac.xyz/cheater-count")
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data && data.success && typeof data.count === 'number') {
+                            cheaterCounterElement.textContent = formatWithDots(data.count);
+                        } else {
+                            console.warn("Unexpected data format from API:", data);
+                        }
+                    })
+                    .catch(error => console.error("Error fetching cheater count:", error));
+            }
+
+            updateCheaterCount();
+            setInterval(updateCheaterCount, 45000);
+        });
+    </script>
+</body>
+</html>
