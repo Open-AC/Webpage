@@ -11,6 +11,11 @@
         @apply text-white text-xl font-medium font-jetbrains-mono uppercase cursor-pointer;
     }
 
+    .top-bar {
+        max-width: calc(100% - 44px);
+        @apply fixed flex items-center translucent-themed-item border h-24 max-[550px]:h-16 max-[550px]:p-4 min-w-0 px-12 py-6 top-6 left-11 right-11 z-50;
+    }
+
     .translucent-themed-item {
         @apply rounded-xl bg-black bg-opacity-25 border-slate-600 border-opacity-40 backdrop-blur-md;
     }
@@ -31,6 +36,10 @@
         @apply text-white font-montserrat;
     }
 
+    .big-recap-label {
+        @apply description-label font-jetbrains-mono text-xl max-[450px]:text-sm text-left;
+    }
+
     .recap-label {
         @apply description-label text-xl max-[675px]:text-sm font-jetbrains-mono;
     }
@@ -45,18 +54,18 @@
 
     .dotted-background {
         background-image: radial-gradient(circle, rgba(134, 122, 69, 0.219) 4px, transparent 0);
-        background-size: 50px 50px;
-        animation: moveDots 85s linear infinite; /* Apply the animation */
+        background-size: 75px 75px;
+        animation: moveDots 2s linear infinite; /* Apply the animation */
         @apply absolute transform -translate-x-1/2 -translate-y-1/2 blur-sm w-[400vw] h-[400vh] -z-50;
     }
 
     /* Keyframes to move the dots to the right */
     @keyframes moveDots {
         0% {
-            background-position: 0 25%;
-        }   
+            background-position: 0px 0px;
+        }
         100% {
-            background-position: 100% 75%;
+            background-position: 75px 75px;
         }
     }
 }

@@ -11,9 +11,9 @@
     <!-- TODO: Stupid hack. I hate this. Needs fix. -->
     <div class="fixed dotted-background bg-[#020513]"></div>
     <!-- Top Bar -->
-    <div class="fixed flex items-center translucent-themed-item border-2 h-24 max-[550px]:h-16 max-[550px]:p-4 max-[470px]:border max-w-[calc(100vw - 20px)] px-12 py-6 top-6 left-6 right-6 z-50">
+    <div class="top-bar">
         <a datatarget="about" class="flex items-center max-[550px]:w-full h-full cursor-pointer">
-            <img src="./assets/images/openac_logo.png" alt="OpenAC Topbar Logo" class="h-full w-full object-contain">
+            <img src="./assets/images/openac_logo.png" alt="OpenAC topbar logo" class="h-full w-full object-contain">
         </a>
         <nav id="nav-links" class="flex items-center space-x-4 ml-auto max-[700px]:hidden"></nav>
     </div>
@@ -31,7 +31,7 @@
                 All this was before Roblox® partnered with Byfron Technologies in 2022, proving that we've been ahead of the curve in this battle.
                 We mix a little humor with our expertise, because who said keeping cheaters out can't be fun?
             </p>
-            <h1 class="description-label font-jetbrains-mono text-xl max-[450px]:text-sm text-left">
+            <h1 class="big-recap-label">
                 With your help, let's make Roblox® fair — and have a few laughs along the way!
             </h1>
         </section>
@@ -63,33 +63,33 @@
                     </div>
                 </div>
                 <div class="translucent-themed-container max-[600px]:p-5 space-y-6">
-                    <p class="recap-label">
+                    <h5 class="recap-label">
                         Together, we're focused on making Roblox a safer, fairer place to play, so developers can focus on creating and players can enjoy the game, worry-free.
-                    </p>
+                    </h5>
                 </div>
             </div>
         </section>
         <section id="impact" class="space-y-8">
             <h1 class="section-title-label">Our Impact</h1>
+            <div class="flex flex-col items-center space-y-4">
+                <h1 id="cheater-counter" class="translucent-themed-item rounded-md border font-jetbrains-mono font-extralight text-white text-6xl max-[600px]:text-4xl text-center px-12 py-5 mt-4 w-fit">13371337</h1>
+                <p class="text-center font-semibold">Cheaters were detected with OpenAC since it was firstly implemented. (Not working yet, soon™)</p>
+            </div>
             <p>
                 We're not just building tools — we're making a real difference in the Roblox community by giving developers the power to detect exploiters and keep their games safe.
                 From industry veterans to new developers, people rely on our anti-cheat solutions daily to stay ahead of game-breaking exploits.
                 Our methods are tested, battle-proven, and — if we're being honest — kind of fun to watch in action.
                 Every 45 seconds, this counter will update to an approximated total amount of exploiters since OpenAC was firstly implemented.
-                Don't take our word for it — check this <a href="https://TO_FILL/" target="_blank" class="text-blue-300">webpage's source code</a> yourself if you're skeptical.
+                Don't take our word for it — check this <a href="https://github.com/Open-AC/Webpage" target="_blank" class="text-blue-300">webpage's source code</a> yourself if you're skeptical.
             </p>
-            <h5 class="recap-label">
+            <h5 class="big-recap-label">
                 We're all about transparency, proof, and keeping the games you love secure.
             </h5>
-            <div class="flex flex-col items-center space-y-4">
-                <h1 id="cheater-counter" class="translucent-themed-item rounded-md border font-jetbrains-mono font-extralight text-white text-6xl text- text-center px-12 mt-4 w-fit">13371337</h1>
-                <p class="text-center font-semibold">Cheaters were detected with OpenAC since it was firstly implemented. (Not working yet, soon™)</p>
-            </div>
         </section>
         <section id="contact">
             <h1 class="section-title-label">Contact Us</h1>
             <div class="grid grid-cols-1 justify-items-center min-[1200px]:grid-cols-2 gap-5 translucent-themed-container">
-                <p>To contact us, join our community server!</p>
+                <p class="text-left max-[1200px]:text-center w-full">To contact us, join our community server!</p>
                 <iframe src="https://discord.com/widget?id=1259217837969375372&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" class="w-full max-w-[600px] h-[500px]"></iframe>
             </div>
         </section>
